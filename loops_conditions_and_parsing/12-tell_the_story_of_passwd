@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # IFS=: istifadə edərək /etc/passwd faylını parçalayıb while ilə oxuyuruq
 while IFS=: read -r USER PASSWORD UID GID USERINFO HOME SHELL
 do
