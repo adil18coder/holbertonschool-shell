@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script that displays the number of occurrences of each IP and HTTP code from the Apache log file
+
+awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr
