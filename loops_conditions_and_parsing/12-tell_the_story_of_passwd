@@ -1,5 +1,5 @@
-#!/bin/bash
-# Display story based on /etc/passwd
+#!/usr/bin/env bash
+# Displays a story about each user in /etc/passwd
 
 while IFS=":" read -r username password userid groupid description home shell
 do
