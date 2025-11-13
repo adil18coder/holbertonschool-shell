@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 # To file, or not to file
 
-if [ -e school ]; then
-    if [ -f school ]; then
+if [ -e school ]
+then
+    if [ -f school ]
+    then
         echo "File exist and is a regular file"
-    elif [ -s school ]; then
+    elif [ ! -s school ]
+    then
         echo "school exists but empty"
-    elif [ -d school ]; then
+    elif [ -d school ]
+    then
         echo "school exists but it’s a directory"
     fi
 else
