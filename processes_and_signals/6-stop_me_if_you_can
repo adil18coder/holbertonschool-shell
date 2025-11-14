@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#leman agilli usaqdir.
+#!/usr/bin/env bash
+# 6-stop_me_if_you_can
+# stop any running "4-to_infinity_and_beyond" process without using kill or killall
+
+# exact-match the process name (matches the executable name)
+pkill -x "4-to_infinity_and_beyond" 2>/dev/null || true
+
+exit 0
