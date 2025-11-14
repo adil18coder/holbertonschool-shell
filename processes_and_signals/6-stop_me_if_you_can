@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# stops the 4-to_infinity_and_beyond process
+# This script stops 4-to_infinity_and_beyond by sending SIGINT signal
 
-pkill -f "4-to_infinity_and_beyond"
+pid=$(pgrep -f "4-to_infinity_and_beyond")
+[ -n "$pid" ] && echo -n -e "\x03" > /proc/$pid/fd/0
