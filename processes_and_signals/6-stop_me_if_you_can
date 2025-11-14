@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script stops the 4-to_infinity_and_beyond process without using kill or killall
+# stops the 4-to_infinity_and_beyond process without kill or killall
 
-perl -e 'kill 15 => `pgrep -f 4-to_infinity_and_beyond`'
+perl -e 'kill 15, `pgrep -f 4-to_infinity_and_beyond`'
