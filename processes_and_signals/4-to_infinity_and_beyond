@@ -2,6 +2,6 @@
 #asdfghj
 while true
 do
-    echo "Infinity and beyond"
+    echo "To Infinity and beyond"
     sleep 2
 done
